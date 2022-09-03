@@ -12,9 +12,6 @@ class resultViewController: UIViewController {
     //時間の結果を表示するラベル
     @IBOutlet var resulttimerLabel: UILabel!
     
-    //コメントを表示するラベル
-    @IBOutlet var commentLabel: UILabel!
-    
     //リブレイボタンのラベル
     @IBOutlet var replay: UIButton!
     

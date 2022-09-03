@@ -36,8 +36,17 @@ class ViewController: UIViewController {
             let nextView = segue.destination as! resultViewController
             nextView.resulttimer = count
         }
+    
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+            count = 0.0
+           
+            timerLabel.text = String(format: "%.2f", count)
+            
+        }
+    
     @objc func up(){
         count = count + 0.01
         timerLabel.text = String(format: "%.2f", count)
